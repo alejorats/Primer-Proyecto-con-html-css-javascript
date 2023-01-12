@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --black: #000000;
+            --white: #FFFFFF;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --dark: #232830;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+        }
+        .detailProduct {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+        }
+        .containerItems {
+            display: grid;
+            grid-template-rows: 1fr auto auto auto auto;
+            grid-template-columns: 300px;
+            justify-items: center;
+        }
+        .containerItems figure {
+            margin: 0;
+        }
+        .containerItems figure img {
+            width: 300px;
+            max-width: 640px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 0 0 16px 16px;
+        }
+        .containerItems .point {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+        }
+        .containerItems .point li {
+            width: 8px;
+            height: 8px;
+            background-color: var(--very-light-pink);
+            margin: 3px;
+            border-radius: 50%;
+        }
+        .containerItems .point li:hover {
+            width: 9px;
+            height: 9px;
+            background-color: var(--dark);
+            margin: 3px;
+            border-radius: 50%;
+        }
+        .containerItems .price {
+            display: flex;
+            width: 294px;
+            flex-direction: column;
+            margin: 12px 0 0 8px;
+        }
+        .containerItems .price span:first-child {
+            font-size: var(--lg);
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .containerItems .price span:last-child {
+            font-size: var(--md);
+            color: var(--very-light-pink);
+        }
+        .containerItems .description {
+            margin-left: 8px;
+            margin-right: 8px;
+            text-align: justify;
+            color: var(--black);
+            font-weight: 300;
+        }
+        .containerItems button {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-input-field);
+            background-color: var(--hospital-green);
+            border: none;
+            border-radius: 8px;
+            padding: 8px 0;
+            font-size: var(--lg);
+        }
+        .containerItems button img {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="detailProduct">
+        <div class="containerItems">
+            <figure><img src="https://media.istockphoto.com/id/501576086/es/foto/buda.jpg?s=612x612&w=0&k=20&c=X6HiZnEpopL0Z4ag07Y9e1PhqgcXkzbw0gtTOvpJgsg=" alt="Producto"></figure>
+            <div class="point">
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+            <p class="price">
+                <span>$120.00</span>
+                <span>Retro refrigerator</span>
+            </p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, omnis. Explicabo voluptatem provident quaerat optio nobis eveniet dolore esse assumenda nisi architecto illum blanditiis, praesentium cum saepe iste excepturi veritatis?</p>
+            <button><img src="./icons/icon_shopping_cart.svg" alt="Carrito de compras">Add to cart</button>
+        </div>
+    </div>
+</body>
+</html>
